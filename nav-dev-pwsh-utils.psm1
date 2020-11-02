@@ -2,6 +2,16 @@
 <#
   .SYNOPSIS
   Opens a Git repository.
+
+  .DESCRIPTION
+  Sets the current location to a Git repository, and additionally opens the
+  repository in the file explorer, GitHub Desktop, or Visual Studio.
+
+  .INPUTS
+  System.String, which is the path to the Git repository.
+
+  .OUTPUTS
+  None, the Git repository is opened as a side effect.
 #>
 function Open-Repo {
   [CmdletBinding()]
